@@ -59,12 +59,21 @@ body {
 
 	position:absolute;
 	left:50%;
-	top:50%;
+	top:-20%;
 	transform: translate(-50%, -50%);
 
 	display: flex;
 	flex-flow:column;
 	justify-content: space-between;
+
+	transition: top 1s;
+	/* transition: opacity 1s; */
+	/* opacity: 0; */
+}
+
+.window.open {
+	top:50%;
+	/* opacity: 1; */
 }
 
 .window h1 {
